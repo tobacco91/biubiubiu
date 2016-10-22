@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		* {
+			font-family: '微软雅黑';
+		}
+		
+		.current {
+			height: 100%;
+			width: 0;
+			background-color: #0A74DA;
+			border-radius: 3px;
+		}
+		
+		.progress-bar {
+			width: 750px;
+			height: 25px;
+			border-radius: 3px;
+			border: 1px solid #A3A3A3;
+		}
+	</style>
+</head>
+
+<body>
+	<p>
+		请选择一个文件：
+		<input type="file" id="file" />
+		<input type="button" value="预览" onclick="readAsDataURL()">
+	</p>
+
+	<p>
+		<button id="up">上传文件</button>
+		<button id="pause">暂停</button>
+		<p class="description"></p>
+	</p>
+
+	<div class="progress-bar">
+        <div class="current"></div>
+    </div>
+
+    <div id="result" name="result"></div>
+</body>
+<script src="pic.js"></script>
+
+</html>
